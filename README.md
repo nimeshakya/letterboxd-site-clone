@@ -6,6 +6,6 @@ Using Vite + ReactJS to create the website including React libraries: react-rout
 Additional dependencies can be viewed in the `package.json` file.
 
 ## Instructions to run locally
-Step 1: Clone the repository
-Step 2: Run `npm install` to install all the dependencies
-Step 3: Run `npm run dev` to run on development server
+Step 1: Clone the repository\
+Step 2: Run `npm install` to install all the dependencies\
+Step 3: Run `npm run dev` to run on development server\
