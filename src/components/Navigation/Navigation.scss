@@ -1,0 +1,26 @@
+@use '../../variables';
+
+.nav-bar {
+    width: 100%;
+
+    .nav-container {
+        .site-logo-link {
+            display: inline-block;
+            width: 170px;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .nav-links {
+            font-family: variables.$font-primary;
+
+            li {
+                .nav-link {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
