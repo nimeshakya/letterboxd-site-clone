@@ -10,6 +10,9 @@
     text-decoration: none;
 }
 
+#root {
+    background-color: variables.$color-dark-blue;
+}
 .app-container {
     margin: auto;
     width: 100%;

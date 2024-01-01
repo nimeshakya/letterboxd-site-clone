@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { ContentSearchIcon } from '../Icons/ContentIcons';
+import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 import siteLogo from '../../images/site-logo.png';
 
@@ -54,15 +53,15 @@ const Navigation = () => {
                     })}
                 </ul>
             </nav>
-            <div className='nav-form-container'>
-                <form className='search-form'>
-                    <input
-                        type='search'
-                        name='movie-search-input'
-                        id='movie-search-input'
-                    />
-                    <ContentSearchIcon className='content-search-icon' />
-                </form>
+            <form className='search-form'>
+                <input
+                    type='search'
+                    name='movie-search-input'
+                    id='movie-search-input'
+                />
+                <FaMagnifyingGlass className='content-search-icon' />
+            </form>
+            <div className='account-handle-btn-container'>
                 <Link
                     to='/'
                     onClick={handleLinkPress}
