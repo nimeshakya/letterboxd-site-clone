@@ -23,4 +23,14 @@
             }
         }
     }
+    .nav-form-container {
+        .search-form {
+            #movie-search-input {
+            }
+        }
+
+        .account-handle-btn {
+            font-family: variables.$font-primary;
+        }
+    }
 }

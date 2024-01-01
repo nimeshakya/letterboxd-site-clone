@@ -63,6 +63,20 @@ const Navigation = () => {
                     />
                     <ContentSearchIcon className='content-search-icon' />
                 </form>
+                <Link
+                    to='/'
+                    onClick={handleLinkPress}
+                    className='account-handle-btn account-login-btn'
+                >
+                    Log In
+                </Link>
+                <Link
+                    to='/'
+                    onClick={handleLinkPress}
+                    className='account-handle-btn account-signup-btn'
+                >
+                    Sign up
+                </Link>
             </div>
         </div>
     );
