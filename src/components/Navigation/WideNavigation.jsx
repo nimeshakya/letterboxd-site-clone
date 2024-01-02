@@ -8,26 +8,7 @@ import './WideNavigation.scss';
 /*
     Navigation for wider screen (above width of 1000px)
 */
-const WideNavigation = () => {
-    const navLinks = [
-        {
-            name: 'films',
-            link: '/',
-        },
-        {
-            name: 'lists',
-            link: '/',
-        },
-        {
-            name: 'members',
-            link: '/',
-        },
-        {
-            name: 'journals',
-            link: '/',
-        },
-    ];
-
+const WideNavigation = ({ navLinks }) => {
     const handleLinkPress = (e) => {
         e.preventDefault();
     };

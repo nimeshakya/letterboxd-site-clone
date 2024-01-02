@@ -1,11 +1,11 @@
 import React from 'react';
 
-import WideNavigation from './components/Navigation/WideNavigation';
+import Navigation from './components/Navigation/Navigation';
 
 const App = () => {
     return (
         <div className='app-container'>
-            <WideNavigation />
+            <Navigation />
         </div>
     );
 };
