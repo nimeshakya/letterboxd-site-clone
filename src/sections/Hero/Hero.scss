@@ -1,1 +1,36 @@
 @use '../../variables';
+
+.section-hero {
+    width: 100%;
+    height: calc(100vh - 74px);
+    position: relative;
+
+    .hero-interaction-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 65px;
+
+        svg {
+            margin-bottom: 32px;
+        }
+
+        .get-started-btn {
+            display: block;
+            color: variables.$color-white-80;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            padding: 10px;
+            background-color: variables.$color-primary-1;
+            width: 429px;
+            text-transform: uppercase;
+        }
+    }
+}
