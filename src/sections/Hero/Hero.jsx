@@ -7,7 +7,12 @@ import './Hero.scss';
 const Hero = () => {
     return (
         <section className='section-hero'>
-            <div className='hero-img-container'></div>
+            <div className='hero-img-container'>
+                <div className='hero-img hero-img-1'></div>
+                <div className='hero-img hero-img-2 hero-img-hidden'></div>
+                <div className='hero-img hero-img-3 hero-img-hidden'></div>
+            </div>
+
             <div className='hero-interaction-container'>
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
