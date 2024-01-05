@@ -1,0 +1,39 @@
+@use '../../variables';
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0; // this distributes width equally among items
+
+    .about-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid variables.$color-secondary-s3;
+        background-color: variables.$color-pure-white;
+        box-shadow: 0px -2px 6px 0px rgba(227, 181, 95, 0.1) inset,
+            -2px 0px 6px 0px rgba(227, 181, 95, 0.1) inset,
+            0px -4px 6px 6px rgba(227, 181, 95, 0.08) inset,
+            0px 4px 10px 4px rgba(227, 181, 95, 0.1) inset;
+        color: variables.$color-secondary-s3;
+        position: relative;
+        font-size: 32px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 24px;
+        color: variables.$color-pure-white;
+        font-family: variables.$font-primary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

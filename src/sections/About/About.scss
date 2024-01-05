@@ -1,0 +1,84 @@
+@use '../../variables';
+
+.section-about {
+    width: 100%;
+    padding: 142px 297px;
+
+    .about-container {
+        border-radius: 10px;
+        border: 1px solid variables.$color-primary-1;
+        background: var(--blue-dark, #070c1f);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 415px;
+        position: relative;
+
+        .about-description-set {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about-description-set-1 {
+            top: -60px;
+        }
+        .about-description-set-2 {
+            top: calc(100% - 60px);
+        }
+
+        .description-header-container {
+            width: 100%;
+            color: variables.$color-pure-white;
+            font-family: variables.$font-primary;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px; // gap between the description and this
+
+            h1 {
+                color: var(--secondary-s2, #fcc96a);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                align-self: center;
+
+                #about-quote {
+                    font-size: 24px;
+                    position: absolute;
+                    top: 0;
+                    left: -24px;
+                }
+            }
+
+            p {
+                color: variables.$color-white-80;
+                font-family: Poppins;
+                text-align: center;
+                font-style: normal;
+                line-height: normal;
+                font-weight: 400;
+
+                &:nth-child(2) {
+                    font-size: 20px;
+                }
+                &:nth-child(3) {
+                    font-size: 16px;
+                    align-self: center;
+
+                    #apple-icon {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
