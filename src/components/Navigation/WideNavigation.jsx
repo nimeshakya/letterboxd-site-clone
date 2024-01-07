@@ -36,7 +36,7 @@ const WideNavigation = ({ navLinks }) => {
                     })}
                 </ul>
             </nav>
-            <form className='search-form'>
+            <form className='search-form' onSubmit={(e) => e.preventDefault()}>
                 <input
                     type='search'
                     name='movie-search-input'

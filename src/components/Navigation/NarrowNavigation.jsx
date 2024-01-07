@@ -19,7 +19,10 @@ const NarrowNavigation = ({ navLinks }) => {
                         setNavSidebarVisible(true);
                     }}
                 />
-                <form className='search-form'>
+                <form
+                    className='search-form'
+                    onSubmit={(e) => preventDefault()}
+                >
                     <FaMagnifyingGlass className='content-search-icon' />
                     <input
                         type='search'
