@@ -3,6 +3,7 @@ import React from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Hero from './sections/Hero/Hero';
 import About from './sections/About/About';
+import Main from './sections/Main/Main';
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <Navigation />
             <Hero />
             <About />
+            <Main />
         </div>
     );
 };
