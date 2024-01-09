@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 import './ContentGroup.scss';
 
 const ContentGroup = ({
+    id,
     children,
     className,
     headingText,
     hasMore,
     description,
 }) => {
+    console.log(children);
     return (
-        <div className={`content-group ${className}`}>
+        <div className={`content-group ${className}`} id={id}>
             <div className='content-group-header'>
                 <div className='content-group-heading-container'>
                     <h2>{headingText}</h2>
