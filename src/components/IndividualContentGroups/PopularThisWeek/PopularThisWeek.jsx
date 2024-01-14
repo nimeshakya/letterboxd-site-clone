@@ -19,7 +19,6 @@ const PopularThisWeek = () => {
             id='pop-week-content'
             headingText={'Popular this week'}
             hasMore={true}
-            description={'hello, I am nimesh'}
         >
             <div
                 className={`pop-week-movies-container ${
