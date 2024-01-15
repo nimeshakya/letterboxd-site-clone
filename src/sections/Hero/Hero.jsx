@@ -27,7 +27,7 @@ const Hero = () => {
                         cy='4'
                         r='4'
                         fill='white'
-                        fill-opacity='0.8'
+                        fillOpacity='0.8'
                     />
                     <circle cx='52' cy='4' r='4' fill='white' />
                 </svg>
