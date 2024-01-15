@@ -1,0 +1,12 @@
+@use '../../../variables';
+
+#pop-week-reviews {
+    .pop-reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px;
+        column-gap: 30px;
+        margin-top: 33px;
+    }
+}

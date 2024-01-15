@@ -1,0 +1,131 @@
+@use '../../../variables';
+
+.popular-review {
+    width: calc(50% - 15px);
+    display: flex;
+
+    gap: 30px;
+
+    .movie-img-container {
+        width: 196px;
+        min-width: 196px;
+        height: 230px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .review-container {
+        h1 {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 16px;
+            span {
+                color: variables.$color-pure-white;
+                font-family: variables.$font-primary;
+                font-size: 24px;
+                font-style: normal;
+                line-height: normal;
+
+                &:nth-child(1) {
+                    font-weight: 600;
+                }
+                &:nth-child(2) {
+                    font-weight: 400;
+                }
+                &:nth-child(3) {
+                    position: relative;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        position: absolute;
+                        font-size: 12px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .reviewer-info-container {
+            display: flex;
+            margin-top: 24px;
+
+            img {
+                width: 48px;
+                height: 50px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            div {
+                margin: 0 24px 0 16px;
+
+                p {
+                    font-family: variables.$font-primary;
+                    font-style: normal;
+                    line-height: normal;
+
+                    &:nth-child(1) {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: variables.$color-white-80;
+                    }
+
+                    &:nth-child(2) {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: variables.$color-gray-80;
+                    }
+                }
+            }
+
+            p {
+                font-size: 24px;
+                color: variables.$color-secondary-s1;
+            }
+        }
+
+        .reviewer-review {
+            margin: 16px 0;
+            color: variables.$color-gray-100;
+            font-family: variables.$font-primary;
+            font-size: 14px;
+            font-weight: 400;
+
+            .review-read-link {
+                color: variables.$color-primary-5;
+                font-weight: 600;
+            }
+        }
+
+        .interaction-info-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 14px;
+
+            .interaction-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: variables.$color-white-80;
+
+                .interaction-icon {
+                    font-size: 24px;
+
+                    &.heart {
+                        color: red;
+                    }
+
+                    &.comment {
+                        color: skyblue;
+                    }
+                }
+            }
+        }
+    }
+}
