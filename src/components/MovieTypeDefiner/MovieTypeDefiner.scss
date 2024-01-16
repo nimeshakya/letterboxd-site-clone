@@ -1,0 +1,12 @@
+@use '../../variables';
+.movie-type-definer {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        position: absolute;
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+}
