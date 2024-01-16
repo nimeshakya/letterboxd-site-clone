@@ -36,17 +36,6 @@
                 &:nth-child(2) {
                     font-weight: 400;
                 }
-                &:nth-child(3) {
-                    position: relative;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    p {
-                        position: absolute;
-                        font-size: 12px;
-                        text-transform: capitalize;
-                    }
-                }
             }
         }
 
