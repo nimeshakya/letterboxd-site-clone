@@ -13,9 +13,10 @@ const PopularReview = ({ movie, reviewer }) => {
         const stars = [];
         let fullStar = Math.floor(rating);
         for (let i = 0; i < fullStar; ++i) {
-            stars.push(<FaStar />);
+            stars.push(<FaStar key={i} />);
         }
-        if (rating - fullStar == 0.5) stars.push(<FaStarHalfAlt />);
+        if (rating - fullStar == 0.5)
+            stars.push(<FaStarHalfAlt key={rating} />);
         return stars;
     };
 
