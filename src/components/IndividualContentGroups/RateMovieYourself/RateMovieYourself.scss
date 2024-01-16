@@ -1,0 +1,8 @@
+@use '../../../variables';
+#self-rate-group {
+    .rating-movies-container {
+        display: flex;
+        gap: 30px;
+        margin-top: 24px;
+    }
+}
