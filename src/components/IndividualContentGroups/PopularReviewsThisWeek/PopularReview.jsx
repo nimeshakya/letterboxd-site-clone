@@ -7,8 +7,6 @@ import MovieTypeDefiner from '../../MovieTypeDefiner/MovieTypeDefiner';
 import './PopularReview.scss';
 
 const PopularReview = ({ movie, reviewer }) => {
-    console.log(movie, reviewer);
-
     const genRatingStar = (rating) => {
         const stars = [];
         let fullStar = Math.floor(rating);
