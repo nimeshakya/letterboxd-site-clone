@@ -4,6 +4,7 @@ import PopularThisWeek from '../../components/IndividualContentGroups/PopularThi
 import PopularReviewsThisWeek from '../../components/IndividualContentGroups/PopularReviewsThisWeek/PopularReviewsThisWeek';
 import RateMovieYourself from '../../components/IndividualContentGroups/RateMovieYourself/RateMovieYourself';
 import RecentStories from '../../components/IndividualContentGroups/RecentStories/RecentStories';
+import RecentNews from '../../components/IndividualContentGroups/RecentNews/RecentNews';
 
 import './Main.scss';
 
@@ -14,6 +15,7 @@ const Main = () => {
             <PopularReviewsThisWeek />
             <RateMovieYourself />
             <RecentStories />
+            <RecentNews />
         </main>
     );
 };

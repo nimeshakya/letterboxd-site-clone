@@ -1,0 +1,106 @@
+@use '../../../variables';
+
+.news-card {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 4px;
+    background: linear-gradient(
+        134deg,
+        #1d4c70 -50%,
+        rgba(0, 0, 0, 0.2) 100.55%
+    );
+    box-shadow: 0px 4px 14px 0px rgba(7, 12, 31, 0.1);
+
+    img {
+        width: 100%;
+        height: 306px;
+        object-fit: cover;
+    }
+
+    .news-desc-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px 25px 25px;
+        font-family: variables.$font-primary;
+        gap: 16px;
+        p {
+            &:nth-child(1) {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    &:nth-child(1) {
+                        background-color: variables.$color-primary-1;
+                        color: variables.$color-pure-white;
+                        padding: 8px;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 16px;
+                        color: variables.$color-secondary-s3;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .news-desc {
+            h1 {
+                font-size: 16px;
+                font-weight: 600;
+                color: variables.$color-white-80;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: variables.$color-gray-100;
+
+                .news-more-link {
+                    font-weight: 600;
+                    color: variables.$color-primary-5;
+                }
+            }
+        }
+
+        .news-more-info-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .user-container {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                    border-radius: 32px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: variables.$color-white-80;
+                }
+            }
+
+            .media-links {
+                display: flex;
+                gap: 24px;
+                li {
+                    .news-media-link {
+                        color: variables.$color-primary-3;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
