@@ -1,0 +1,53 @@
+@use '../../../variables';
+
+.showdown {
+    width: calc((100% - 60px) / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 4px;
+    background: linear-gradient(
+        120deg,
+        #1d4c70 -0.18%,
+        rgba(0, 0, 0, 0.4) 98.35%
+    );
+
+    /* shadow 1 */
+    box-shadow: 0px 4px 14px 0px rgba(7, 12, 31, 0.1);
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 232px;
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 20px 20px 20px;
+
+        h1 {
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-flex;
+            gap: 5px;
+
+            span {
+                &:nth-child(1) {
+                    color: variables.$color-pure-white;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    color: variables.$color-secondary-s3;
+                }
+            }
+        }
+
+        p {
+            color: variables.$color-gray-100;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

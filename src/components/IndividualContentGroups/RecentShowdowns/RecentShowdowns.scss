@@ -1,0 +1,10 @@
+@use '../../../variables';
+
+#recent-showdowns {
+    .showdowns-container {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        margin-top: 33px;
+    }
+}
