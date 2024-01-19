@@ -1,0 +1,72 @@
+@use '../../variables';
+
+.footer-info-container {
+    width: 1302px;
+    margin: 0 auto;
+    padding: 40px 0 80px 0;
+    display: flex;
+    gap: 100px;
+
+    .site-description-container {
+        font-family: variables.$font-primary !important;
+        img {
+            width: 133px;
+            height: 57px;
+            object-fit: contain;
+        }
+
+        p {
+            width: 339px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: variables.$color-white-80;
+        }
+    }
+
+    .info-links-container {
+        min-width: 120px;
+        max-width: 155px;
+        h1 {
+            color: variables.$color-pure-white;
+            font-family: variables.$font-primary;
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+
+            span {
+                display: inline-block;
+                height: 24px;
+                width: 4px;
+                background-color: variables.$color-sky-blue;
+            }
+        }
+
+        .footer-link-list {
+            margin-top: 24px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            li {
+                .footer-link {
+                    font-family: variables.$font-primary;
+                    font-size: 14px;
+                    color: variables.$color-white-80;
+                }
+            }
+
+            &.footer-link-list-icons {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .footer-link-icon {
+                    font-size: 24px;
+                    color: variables.$color-primary-3;
+                }
+            }
+        }
+    }
+}

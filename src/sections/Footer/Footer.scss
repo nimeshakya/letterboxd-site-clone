@@ -1,0 +1,86 @@
+@use '../../variables';
+
+footer {
+    width: 100%;
+    margin-top: 104px;
+    background-color: variables.$color-dark-bg;
+
+    .contact-form-container {
+        height: 170px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.2) 100%
+            ),
+            linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.2) 100%
+            ),
+            url('/assets/movie_reel_img.png') lightgray 1.639px -518.023px / 100%
+                639.35% no-repeat;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 1.639px -518.023px / 100% 639.35% no-repeat;
+
+        form {
+            margin-right: 114px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            border-radius: 40px;
+            background-color: variables.$color-pure-white;
+
+            .contact-email-input {
+                width: 478px;
+                height: 100%;
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+                background: none;
+                font-family: variables.$font-primary;
+                padding: 20px 0 20px 40px;
+                font-family: variables.$font-primary;
+                color: variables.$color-dark-black;
+                font-size: 16px;
+                font-weight: 400;
+
+                &::placeholder {
+                    color: variables.$color-dark-black;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .contact-submit-btn {
+                width: 353px;
+                height: 100%;
+                border-radius: 40px;
+                background: linear-gradient(
+                    177deg,
+                    #3b98df -13.04%,
+                    rgba(66, 171, 252, 0) 137.84%
+                );
+                color: variables.$color-dark-blue;
+                font-family: variables.$font-primary;
+                font-size: 16px;
+                font-weight: 400;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .copyright-info-container {
+        width: 100%;
+        text-align: center;
+        background-color: variables.$color-dark-blue;
+        padding: 23px 0;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: variables.$font-primary;
+        color: variables.$color-white-80;
+    }
+}
