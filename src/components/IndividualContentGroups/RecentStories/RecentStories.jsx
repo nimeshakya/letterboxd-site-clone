@@ -16,7 +16,7 @@ const RecentStories = () => {
         >
             <div className='stories-container'>
                 {storiesData.map((story, index) => {
-                    return <Story story={story} />;
+                    return <Story key={index} story={story} />;
                 })}
             </div>
         </ContentGroup>

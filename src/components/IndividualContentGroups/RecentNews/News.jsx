@@ -35,7 +35,7 @@ const News = ({ news }) => {
                             // make use of mediaLinks key here
                             news.mediaLinks.map((link, index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <Link
                                             to='/'
                                             className='news-media-link'
