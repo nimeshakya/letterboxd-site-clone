@@ -10,6 +10,8 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        max-width: 1920px;
+        margin: 0 auto;
         background: linear-gradient(
                 0deg,
                 rgba(0, 0, 0, 0.2) 0%,

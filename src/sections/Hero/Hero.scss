@@ -5,6 +5,8 @@
     height: calc(100vh - 74px);
     position: relative;
 
+    max-width: 1920px;
+    margin: 0 auto;
     .hero-img-container {
         width: 100%;
         height: 100%;
