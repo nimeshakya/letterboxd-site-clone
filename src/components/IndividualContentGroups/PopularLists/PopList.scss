@@ -1,0 +1,87 @@
+@use '../../../variables';
+
+.pop-list {
+    width: 647px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .posters-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-auto-rows: minmax(231px, auto);
+        position: relative;
+
+        .pop-list-posters {
+            grid-row: 1;
+            $starting: 1;
+            $zindex: 60;
+
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    z-index: $zindex;
+                    $zindex: $zindex - 1;
+                    background-color: red;
+
+                    @if $i == 1 {
+                        grid-column: #{$starting} / 5 !important;
+                        $starting: 4;
+                    } @else {
+                        grid-column: #{$starting} / #{$starting + 4};
+                        $starting: $starting + 3;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .list-author-container {
+        p {
+            color: variables.$color-white-80;
+            font-family: variables.$font-primary;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .author-and-interaction {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            img {
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                object-fit: cover;
+                margin-right: 8px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .interaction-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: variables.$color-gray-100;
+                margin-left: 16px;
+
+                .interaction-icon {
+                    &.heart {
+                        color: red;
+                    }
+                    &.comment {
+                        color: variables.$color-primary-3;
+                    }
+                }
+            }
+        }
+    }
+}

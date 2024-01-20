@@ -1,0 +1,9 @@
+@use '../../../variables';
+
+#popular-lists {
+    .pop-lists-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
