@@ -28,7 +28,11 @@ const PopList = ({ list }) => {
                         onClick={(e) => e.preventDefault()}
                     >
                         <FaHeart className='interaction-icon heart' />{' '}
-                        {list.likes} likes
+                        {/* changing numbers to comma seperated string here */}
+                        {list.likes
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}{' '}
+                        likes
                     </Link>
                     <Link
                         to='/'
@@ -36,7 +40,9 @@ const PopList = ({ list }) => {
                         onClick={(e) => e.preventDefault()}
                     >
                         <FaComment className='interaction-icon comment' />{' '}
-                        {list.comments}
+                        {list.comments
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                     </Link>
                 </div>
             </div>

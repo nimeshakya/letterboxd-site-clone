@@ -53,31 +53,31 @@ const PopularLists = () => {
             movies: [
                 {
                     img: new URL(
-                        '/assets/movie_posters/mv10.png',
+                        '/assets/movie_posters/mv30.png',
                         import.meta.url
                     ).href,
                 },
                 {
                     img: new URL(
-                        '/assets/movie_posters/mv10.png',
+                        '/assets/movie_posters/mv29.png',
                         import.meta.url
                     ).href,
                 },
                 {
                     img: new URL(
-                        '/assets/movie_posters/mv10.png',
+                        '/assets/movie_posters/mv28.png',
                         import.meta.url
                     ).href,
                 },
                 {
                     img: new URL(
-                        '/assets/movie_posters/mv10.png',
+                        '/assets/movie_posters/mv27.png',
                         import.meta.url
                     ).href,
                 },
                 {
                     img: new URL(
-                        '/assets/movie_posters/mv10.png',
+                        '/assets/movie_posters/mv26.png',
                         import.meta.url
                     ).href,
                 },
