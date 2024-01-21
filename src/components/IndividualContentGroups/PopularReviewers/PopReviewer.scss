@@ -1,0 +1,41 @@
+@use '../../../variables';
+
+.pop-reviewer {
+    display: flex;
+    gap: 32px;
+
+    img {
+        width: 83px;
+        height: 80px;
+        border-radius: 83px;
+        object-fit: cover;
+    }
+
+    .reviewer-description-container {
+        h2 {
+            color: variables.$color-gray-100;
+            font-family: variables.$font-primary;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .interaction-count-container {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .interaction-count-link {
+                font-size: 16px;
+                font-weight: 400;
+                color: variables.$color-gray-3;
+
+                span {
+                    font-weight: 700;
+                    color: variables.$color-primary-2;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
