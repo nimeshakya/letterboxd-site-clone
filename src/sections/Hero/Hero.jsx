@@ -1,16 +1,61 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 import Button from '../../components/Button/Button';
 
 import './Hero.scss';
 
 const Hero = () => {
+    const corouselImgRef = useRef();
+    const [displayedImg, setDisplayedImg] = useState(0); // index for shown image
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            console.log('this running', displayedImg);
+            console.log(corouselImgRef);
+            switch (displayedImg) {
+                case 0:
+                    corouselImgRef.current.classList.add('no-translate');
+                    corouselImgRef.current.classList.remove('mid-translate');
+                    corouselImgRef.current.classList.remove('end-translate');
+                    break;
+                case 1:
+                    corouselImgRef.current.classList.remove('no-translate');
+                    corouselImgRef.current.classList.add('mid-translate');
+                    corouselImgRef.current.classList.remove('end-translate');
+                    break;
+                case 2:
+                    corouselImgRef.current.classList.remove('no-translate');
+                    corouselImgRef.current.classList.remove('mid-translate');
+                    corouselImgRef.current.classList.add('end-translate');
+                    break;
+
+                default:
+                    break;
+            }
+
+            // change displayed image index
+            if (displayedImg < 2) {
+                setDisplayedImg((displayedImg) => {
+                    return displayedImg + 1;
+                });
+            } else {
+                setDisplayedImg(0);
+            }
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [displayedImg]);
+
     return (
         <section className='section-hero'>
-            <div className='hero-img-container'>
-                <div className='hero-img hero-img-1'></div>
-                <div className='hero-img hero-img-2 hero-img-hidden'></div>
-                <div className='hero-img hero-img-3 hero-img-hidden'></div>
+            <div className='hero-corousel-container'>
+                <div
+                    className='hero-img-container mid-translate'
+                    ref={corouselImgRef}
+                >
+                    <div className='hero-img hero-img-1'></div>
+                    <div className='hero-img hero-img-2'></div>
+                    <div className='hero-img hero-img-3'></div>
+                </div>
             </div>
 
             <div className='hero-interaction-container'>

@@ -4,39 +4,50 @@
     width: 100%;
     height: calc(100vh - 74px);
     position: relative;
-
     max-width: 1920px;
     margin: 0 auto;
-    .hero-img-container {
+
+    .hero-corousel-container {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        overflow-x: hidden;
+        overflow: hidden;
 
-        .hero-img {
+        .hero-img-container {
             width: 100%;
-            min-width: 100%;
             height: 100%;
-            &.hero-img-1 {
-                background: url(../../images/hero_bg_1.png) top / cover
-                        no-repeat,
-                    lightgrey center / cover no-repeat;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            &.no-translate {
+                transform: translateX(0%);
             }
-            &.hero-img-2 {
-                background: url(../../images/hero_bg_2.png) top / cover
-                        no-repeat,
-                    lightgrey center / cover no-repeat;
+            &.mid-translate {
+                transform: translateX(-100%);
             }
-            &.hero-img-3 {
-                background: url(../../images/hero_bg_3.png) top / cover
-                        no-repeat,
-                    lightgrey center / cover no-repeat;
+            &.end-translate {
+                transform: translateX(-200%);
             }
-            /* &.hero-img-hidden {
+
+            .hero-img {
+                width: 100%;
+                min-width: 100%;
+                height: 100%;
+
+                @for $i from 1 through 3 {
+                    &.hero-img-#{$i} {
+                        background: url(../../images/hero_bg_#{$i}.png)
+                                top /
+                                cover
+                                no-repeat,
+                            lightgrey center / cover no-repeat;
+                    }
+                }
+
+                /* &.hero-img-hidden {
                 display: none;
             } */
+            }
         }
     }
 
