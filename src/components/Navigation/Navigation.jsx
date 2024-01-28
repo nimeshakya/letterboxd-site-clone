@@ -3,8 +3,6 @@ import React from 'react';
 import WideNavigation from './WideNavigation';
 import NarrowNavigation from './NarrowNavigation';
 
-import './Navigation.scss';
-
 const Navigation = () => {
     const navLinks = [
         {

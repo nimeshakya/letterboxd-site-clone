@@ -44,9 +44,37 @@
                     }
                 }
 
-                /* &.hero-img-hidden {
-                display: none;
-            } */
+                position: relative;
+                h1 {
+                    position: absolute;
+                    font-family: variables.$font-primary;
+                    color: variables.$color-pure-white;
+                    font-size: 32px;
+                    font-weight: 300;
+                    span {
+                        font-size: 60px;
+                        font-weight: 700;
+                    }
+                }
+
+                &:nth-child(1) {
+                    h1 {
+                        top: 90px;
+                        left: 174px;
+                    }
+                }
+                &:nth-child(2) {
+                    h1 {
+                        top: 288px;
+                        left: 521px;
+                    }
+                }
+                &:nth-child(3) {
+                    h1 {
+                        top: 432px;
+                        left: 694px;
+                    }
+                }
             }
         }
     }

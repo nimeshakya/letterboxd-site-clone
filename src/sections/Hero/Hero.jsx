@@ -36,9 +36,21 @@ const Hero = () => {
                     }`}
                     ref={corouselImgRef}
                 >
-                    <div className='hero-img hero-img-1'></div>
-                    <div className='hero-img hero-img-2'></div>
-                    <div className='hero-img hero-img-3'></div>
+                    <div className='hero-img hero-img-1'>
+                        <h1>
+                            <span>Track</span> films you've watched.
+                        </h1>
+                    </div>
+                    <div className='hero-img hero-img-2'>
+                        <h1>
+                            <span>Save</span> those you want to see.
+                        </h1>
+                    </div>
+                    <div className='hero-img hero-img-3'>
+                        <h1>
+                            <span>Tell</span> your friends what's good.
+                        </h1>
+                    </div>
                 </div>
             </div>
 
