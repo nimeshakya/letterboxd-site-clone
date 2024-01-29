@@ -59,20 +59,21 @@
 
                 &:nth-child(1) {
                     h1 {
-                        top: 90px;
-                        left: 174px;
+                        top: 10%;
+                        left: 10%;
                     }
                 }
                 &:nth-child(2) {
                     h1 {
-                        top: 288px;
-                        left: 521px;
+                        top: 35%;
+                        left: 25%;
                     }
                 }
                 &:nth-child(3) {
                     h1 {
-                        top: 432px;
-                        left: 694px;
+                        bottom: 25%;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 }
             }
@@ -98,12 +99,12 @@
             color: variables.$color-white-80;
             text-align: center;
             font-family: Poppins;
-            font-size: 32px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 500;
             padding: 10px;
             background-color: variables.$color-primary-1;
-            width: 429px;
+            width: 400px;
             text-transform: uppercase;
         }
     }
