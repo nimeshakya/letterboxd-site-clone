@@ -6,7 +6,8 @@
     align-items: center;
     p {
         position: absolute;
-        font-size: 12px;
+        font-size: 12px !important;
         text-transform: capitalize;
+        font-weight: 400 !important;
     }
 }

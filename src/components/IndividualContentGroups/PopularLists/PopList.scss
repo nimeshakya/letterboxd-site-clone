@@ -21,8 +21,6 @@
                 &:nth-child(#{$i}) {
                     z-index: $zindex;
                     $zindex: $zindex - 1;
-                    background-color: red;
-
                     @if $i == 1 {
                         grid-column: #{$starting} / 5 !important;
                         $starting: 4;
@@ -37,6 +35,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 4px;
             }
         }
     }
