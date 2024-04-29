@@ -19,7 +19,7 @@ const Hero = () => {
             } else {
                 setDisplayedImg(0);
             }
-        }, 5000);
+        }, 3000);
         return () => clearInterval(timer);
     }, [displayedImg]);
 

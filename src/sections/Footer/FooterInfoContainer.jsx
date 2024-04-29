@@ -103,85 +103,87 @@ const FooterInfoContainer = () => {
                     of Cinephile you are.
                 </p>
             </div>
-            <div className='info-links-container'>
-                <h1>
-                    <span></span>Company
-                </h1>
-                <ul className='footer-link-list'>
-                    {companyInfoLinks.map((info, index) => {
-                        return (
-                            <li key={index}>
-                                <Link
-                                    to={info.link}
-                                    onClick={(e) => e.preventDefault()}
-                                    className='footer-link'
-                                >
-                                    {info.name}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
-            <div className='info-links-container'>
-                <h1>
-                    <span></span>Features
-                </h1>
-                <ul className='footer-link-list'>
-                    {featuresInfoLinks.map((info, index) => {
-                        return (
-                            <li key={index}>
-                                <Link
-                                    to={info.link}
-                                    onClick={(e) => e.preventDefault()}
-                                    className='footer-link'
-                                >
-                                    {info.name}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
-            <div className='info-links-container'>
-                <h1>
-                    <span></span>Know more
-                </h1>
-                <ul className='footer-link-list'>
-                    {knowMoreInfo.map((info, index) => {
-                        return (
-                            <li key={index}>
-                                <Link
-                                    to={info.link}
-                                    onClick={(e) => e.preventDefault()}
-                                    className='footer-link'
-                                >
-                                    {info.name}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
-            <div className='info-links-container'>
-                <h1>
-                    <span></span>Get latest news
-                </h1>
-                <ul className='footer-link-list footer-link-list-icons'>
-                    {mediaLinks.map((info, index) => {
-                        return (
-                            <li key={index}>
-                                <Link
-                                    to={info.link}
-                                    onClick={(e) => e.preventDefault()}
-                                    className='footer-link-icon'
-                                >
-                                    {info.icon}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+            <div className='site-info-links-group-container'>
+                <div className='info-links-container'>
+                    <h1>
+                        <span></span>Company
+                    </h1>
+                    <ul className='footer-link-list'>
+                        {companyInfoLinks.map((info, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link
+                                        to={info.link}
+                                        onClick={(e) => e.preventDefault()}
+                                        className='footer-link'
+                                    >
+                                        {info.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <div className='info-links-container'>
+                    <h1>
+                        <span></span>Features
+                    </h1>
+                    <ul className='footer-link-list'>
+                        {featuresInfoLinks.map((info, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link
+                                        to={info.link}
+                                        onClick={(e) => e.preventDefault()}
+                                        className='footer-link'
+                                    >
+                                        {info.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <div className='info-links-container'>
+                    <h1>
+                        <span></span>Know more
+                    </h1>
+                    <ul className='footer-link-list'>
+                        {knowMoreInfo.map((info, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link
+                                        to={info.link}
+                                        onClick={(e) => e.preventDefault()}
+                                        className='footer-link'
+                                    >
+                                        {info.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <div className='info-links-container'>
+                    <h1>
+                        <span></span>Get latest news
+                    </h1>
+                    <ul className='footer-link-list footer-link-list-icons'>
+                        {mediaLinks.map((info, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link
+                                        to={info.link}
+                                        onClick={(e) => e.preventDefault()}
+                                        className='footer-link-icon'
+                                    >
+                                        {info.icon}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
         </div>
     );

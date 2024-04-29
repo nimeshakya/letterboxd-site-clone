@@ -86,3 +86,11 @@ footer {
         color: variables.$color-white-80;
     }
 }
+
+@media screen and (max-width: 690px) {
+    footer {
+        .copyright-info-container {
+            font-size: 12px;
+        }
+    }
+}

@@ -3,11 +3,22 @@
 main {
     display: block;
     width: 100%;
+    padding: 0 20px;
 
     .popular-container {
         margin: 0 auto;
-        width: 1302px;
+        width: 100%;
+        max-width: 1302px;
         display: flex;
         gap: 144px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    main {
+        .popular-container {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }

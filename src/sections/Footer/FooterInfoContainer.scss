@@ -1,10 +1,10 @@
 @use '../../variables';
 
 .footer-info-container {
-    width: 1302px;
-    margin: 0 auto;
-    padding: 40px 0 80px 0;
+    width: 100%;
+    padding: 40px 20px 80px 20px;
     display: flex;
+    justify-content: center;
     gap: 100px;
 
     .site-description-container {
@@ -23,50 +23,96 @@
             color: variables.$color-white-80;
         }
     }
+    .site-info-links-group-container {
+        display: flex;
+        gap: 100px;
+        .info-links-container {
+            min-width: 120px;
+            max-width: 155px;
+            h1 {
+                color: variables.$color-pure-white;
+                font-family: variables.$font-primary;
+                font-size: 16px;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                gap: 16px;
 
-    .info-links-container {
-        min-width: 120px;
-        max-width: 155px;
-        h1 {
-            color: variables.$color-pure-white;
-            font-family: variables.$font-primary;
-            font-size: 16px;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 16px;
+                span {
+                    display: inline-block;
+                    height: 24px;
+                    width: 4px;
+                    background-color: variables.$color-sky-blue;
+                }
+            }
 
-            span {
-                display: inline-block;
-                height: 24px;
-                width: 4px;
-                background-color: variables.$color-sky-blue;
+            .footer-link-list {
+                margin-top: 24px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                li {
+                    .footer-link {
+                        font-family: variables.$font-primary;
+                        font-size: 14px;
+                        color: variables.$color-white-80;
+                    }
+                }
+
+                &.footer-link-list-icons {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .footer-link-icon {
+                        font-size: 24px;
+                        color: variables.$color-primary-3;
+                    }
+                }
             }
         }
+    }
+}
 
-        .footer-link-list {
-            margin-top: 24px;
-            padding-left: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            li {
-                .footer-link {
-                    font-family: variables.$font-primary;
-                    font-size: 14px;
-                    color: variables.$color-white-80;
-                }
+@media screen and (max-width: 1300px) {
+    .footer-info-container {
+        gap: 50px;
+
+        .site-info-links-group-container {
+            gap: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .footer-info-container {
+        gap: 20px;
+
+        .site-info-links-group-container {
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .footer-info-container {
+        flex-direction: column;
+        .site-description-container {
+            p {
+                width: 100%;
             }
+        }
+        .site-info-links-group-container {
+            justify-content: space-between;
+        }
+    }
+}
 
-            &.footer-link-list-icons {
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                .footer-link-icon {
-                    font-size: 24px;
-                    color: variables.$color-primary-3;
-                }
-            }
+@media screen and (max-width: 620px) {
+    .footer-info-container {
+        .site-info-links-group-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

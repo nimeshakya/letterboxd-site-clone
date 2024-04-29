@@ -8,3 +8,12 @@
         margin-top: 32px;
     }
 }
+
+@media screen and (max-width: 1366px) {
+    #popular-lists {
+        .pop-lists-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
