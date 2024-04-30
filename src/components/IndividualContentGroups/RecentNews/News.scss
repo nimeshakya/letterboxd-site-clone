@@ -106,3 +106,14 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .news-card {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .news-card {
+        width: 100%;
+    }
+}

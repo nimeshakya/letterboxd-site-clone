@@ -9,3 +9,12 @@
         margin-top: 33px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    #recent-news {
+        .news-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -25,14 +25,19 @@ const PopularReview = ({ movie, reviewer }) => {
             </div>
             <div className='review-container'>
                 <h1>
-                    <span>{movie.name}</span> <span>{movie.releaseYear}</span>{' '}
-                    <MovieTypeDefiner type={movie.type} />
+                    <span>{movie.name}</span>{' '}
+                    <span>
+                        <span>{movie.releaseYear}</span>{' '}
+                        <MovieTypeDefiner type={movie.type} />
+                    </span>
                 </h1>
                 <div className='reviewer-info-container'>
-                    <img src={reviewer.profileImg} alt='profile image' />
-                    <div>
-                        <p className='reviewer-name'>{reviewer.name}</p>
-                        <p className='review-date'>{reviewer.dateTime}</p>
+                    <div className='reviewer-profile'>
+                        <img src={reviewer.profileImg} alt='profile image' />
+                        <div>
+                            <p className='reviewer-name'>{reviewer.name}</p>
+                            <p className='review-date'>{reviewer.dateTime}</p>
+                        </div>
                     </div>
                     <p>
                         {

@@ -8,3 +8,12 @@
         margin-top: 33px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    #recent-showdowns {
+        .showdowns-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

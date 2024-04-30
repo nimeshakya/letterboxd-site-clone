@@ -87,10 +87,57 @@ footer {
     }
 }
 
+@media screen and (max-width: 1080px) {
+    footer {
+        .contact-form-container {
+            background-color: red;
+            justify-content: center;
+            padding: 0 20px;
+
+            form {
+                width: 100%;
+                margin: 0;
+                .contact-email-input {
+                    width: 60%;
+                }
+                .contact-submit-btn {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 690px) {
     footer {
         .copyright-info-container {
             font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    footer {
+        .contact-form-container {
+            form {
+                flex-direction: column;
+                gap: 5px;
+                background: none;
+
+                .contact-email-input {
+                    background-color: variables.$color-pure-white;
+                    border-radius: 40px;
+                    padding: 10px 20px;
+                    width: 100%;
+                }
+
+                .contact-submit-btn {
+                    width: 100%;
+                    background-color: variables.$color-pure-white;
+                    padding: 8px 0;
+                    position: relative;
+                }
+            }
         }
     }
 }

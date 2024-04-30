@@ -9,3 +9,11 @@
         margin-top: 40px;
     }
 }
+
+@media screen and (max-width: 1160px) {
+    #recent-stories {
+        .stories-container {
+            justify-content: center;
+        }
+    }
+}

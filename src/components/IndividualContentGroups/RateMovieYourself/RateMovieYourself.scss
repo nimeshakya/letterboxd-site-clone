@@ -2,7 +2,16 @@
 #self-rate-group {
     .rating-movies-container {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    #self-rate-group {
+        .rating-movies-container {
+            justify-content: center;
+        }
     }
 }

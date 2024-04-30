@@ -17,5 +17,12 @@
 @media screen and (max-width: 1066px) {
     .pop-reviewers-container {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .pop-reviewers-container {
+        display: flex;
     }
 }
