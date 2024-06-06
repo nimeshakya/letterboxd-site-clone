@@ -117,3 +117,38 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 460px) {
+    .news-card {
+        .news-desc-container {
+            .news-more-info-container {
+                .user-container {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                .media-links {
+                    gap: 18px;
+                    li {
+                        .news-media-link {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .news-card {
+        .news-desc-container {
+            .news-more-info-container {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    }
+}

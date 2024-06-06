@@ -6,7 +6,9 @@
 
     img {
         width: 83px;
-        height: 80px;
+        height: 83px;
+        min-width: 83px;
+        min-height: 83px;
         border-radius: 83px;
         object-fit: cover;
     }
@@ -20,7 +22,6 @@
         }
 
         .interaction-count-container {
-            height: 40px;
             display: flex;
             align-items: center;
             gap: 16px;

@@ -23,7 +23,8 @@
     .review-container {
         h1 {
             display: inline-flex;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: flex-start;
             gap: 16px;
             span {
                 color: variables.$color-pure-white;
@@ -37,6 +38,9 @@
                 }
                 &:nth-child(2) {
                     font-weight: 400;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 16px;
                 }
             }
         }
@@ -133,13 +137,14 @@
 @media screen and (max-width: 650px) {
     .popular-review {
         min-width: 280px;
+        flex-direction: column;
         .movie-img-container {
-            height: 100%;
+            width: 100%;
         }
         .review-container {
             h1 {
                 display: inline-flex;
-                flex-direction: column;
+                align-items: flex-start;
 
                 span {
                     &:nth-child(2) {

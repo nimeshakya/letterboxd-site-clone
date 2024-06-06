@@ -84,3 +84,9 @@
         }
     }
 }
+
+@media screen and (max-width: 370px) {
+    .recent-story {
+        min-width: 100%;
+    }
+}

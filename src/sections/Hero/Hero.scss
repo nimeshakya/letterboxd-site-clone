@@ -109,3 +109,88 @@
         }
     }
 }
+
+@media screen and (max-width: 1060px) {
+    .section-hero {
+        .hero-corousel-container {
+            .hero-img-container {
+                .hero-img {
+                    h1 {
+                        font-size: 24px;
+                        span {
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-hero {
+        .hero-corousel-container {
+            .hero-img-container {
+                .hero-img {
+                    h1 {
+                        font-size: 18px;
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .section-hero {
+        .hero-corousel-container {
+            .hero-img-container {
+                .hero-img {
+                    h1 {
+                        white-space: nowrap;
+                        font-size: 18px;
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        h1 {
+                            top: unset;
+                            bottom: 25%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    &:nth-child(2) {
+                        h1 {
+                            top: unset;
+                            bottom: 25%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    &:nth-child(3) {
+                        h1 {
+                            bottom: 25%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-hero {
+        .hero-interaction-container {
+            .get-started-btn {
+                font-size: 18px;
+                width: 300px;
+            }
+        }
+    }
+}

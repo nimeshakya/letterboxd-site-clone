@@ -11,7 +11,6 @@ const ContentGroup = ({
     hasMore,
     description,
 }) => {
-    console.log(children);
     return (
         <div className={`content-group ${className}`} id={id}>
             <div className='content-group-header'>

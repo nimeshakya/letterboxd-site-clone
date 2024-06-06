@@ -9,7 +9,6 @@ const PopList = ({ list }) => {
         <div className='pop-list'>
             <div className='posters-container'>
                 {list.movies.map((movie, index) => {
-                    console.log(movie);
                     return (
                         <div key={index} className='pop-list-posters'>
                             <img src={movie.img} alt='movie poster' />
