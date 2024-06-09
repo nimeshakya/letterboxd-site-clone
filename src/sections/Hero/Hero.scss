@@ -194,3 +194,27 @@
         }
     }
 }
+
+@media screen and (max-width: 330px) {
+    .section-hero {
+        .hero-corousel-container {
+            .hero-img-container {
+                .hero-img {
+                    h1 {
+                        white-space: nowrap;
+                        font-size: 14px;
+                        span {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-interaction-container {
+            .get-started-btn {
+                font-size: 14px;
+                width: 80%;
+            }
+        }
+    }
+}

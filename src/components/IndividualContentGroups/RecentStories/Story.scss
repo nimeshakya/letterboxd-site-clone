@@ -85,6 +85,16 @@
     }
 }
 
+@media screen and (max-width: 380px) {
+    .recent-story {
+        h1 {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+}
+
 @media screen and (max-width: 370px) {
     .recent-story {
         min-width: 100%;
