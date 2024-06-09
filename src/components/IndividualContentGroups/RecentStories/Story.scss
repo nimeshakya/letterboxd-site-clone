@@ -85,6 +85,13 @@
     }
 }
 
+@media screen and (max-width: 780px) {
+    .recent-story {
+        width: 80%;
+        min-width: none;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .recent-story {
         h1 {
