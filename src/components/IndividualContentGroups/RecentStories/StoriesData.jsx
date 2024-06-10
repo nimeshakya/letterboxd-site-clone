@@ -13,7 +13,7 @@ export const storiesData = [
     },
     {
         username: 'Sally Jane Black',
-        userImg: new URL('/assets/user_profiles/pfp5.png', import.meta.url)
+        userImg: new URL('/assets/user_profiles/pfp5.jpeg', import.meta.url)
             .href,
         date: '11 December',
         movieImg: new URL('/assets/movie_posters/mv24.png', import.meta.url)
@@ -25,7 +25,7 @@ export const storiesData = [
     },
     {
         username: 'hollie amanda',
-        userImg: new URL('/assets/user_profiles/pfp6.png', import.meta.url)
+        userImg: new URL('/assets/user_profiles/pfp6.jpeg', import.meta.url)
             .href,
         date: '12 September',
         movieImg: new URL('/assets/movie_posters/mv23.png', import.meta.url)
