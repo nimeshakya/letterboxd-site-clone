@@ -51,6 +51,15 @@ const About = () => {
     return (
         <section className='section-about'>
             <div className='about-container'>
+                <div className='description-header-container'>
+                    <h1>
+                        <FaQuoteLeft id='about-quote' /> Letterboxd lets you
+                    </h1>
+                    <p>The social network for film lovers</p>
+                    <p>
+                        Also available on <FaApple id='apple-icon' />
+                    </p>
+                </div>
                 <div className='about-description-set about-description-set-1'>
                     {descriptionSet1.map((desc, index) => {
                         return (
@@ -61,16 +70,6 @@ const About = () => {
                             />
                         );
                     })}
-                </div>
-
-                <div className='description-header-container'>
-                    <h1>
-                        <FaQuoteLeft id='about-quote' /> Letterboxd lets you
-                    </h1>
-                    <p>The social network for film lovers</p>
-                    <p>
-                        Also available on <FaApple id='apple-icon' />
-                    </p>
                 </div>
 
                 <div className='about-description-set about-description-set-2'>
