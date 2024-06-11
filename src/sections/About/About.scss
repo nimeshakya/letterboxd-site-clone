@@ -153,6 +153,12 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .section-about {
+        margin: 80px auto 50px auto;
+    }
+}
+
 @media screen and (max-width: 625px) {
     .section-about {
         .about-container {
