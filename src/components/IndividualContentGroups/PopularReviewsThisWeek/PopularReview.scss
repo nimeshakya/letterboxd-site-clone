@@ -138,10 +138,12 @@
     .popular-review {
         min-width: 280px;
         flex-direction: column;
+        gap: 20px;
         .movie-img-container {
             width: 100%;
         }
         .review-container {
+            gap: 10px;
             h1 {
                 display: inline-flex;
                 align-items: center;
@@ -160,7 +162,11 @@
             }
             .reviewer-info-container {
                 flex-direction: column;
-                gap: 10px;
+                gap: 2px;
+            }
+
+            .reviewer-review {
+                margin: 0 0 10px 0;
             }
         }
     }
