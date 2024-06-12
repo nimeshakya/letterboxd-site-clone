@@ -69,3 +69,16 @@
 //         }
 //     }
 // }
+
+@media screen and (max-width: 500px) {
+    #pop-week-content {
+        .pop-week-movies-container {
+            .pop-week-movies-subcontainer {
+                gap: 30px;
+                .pop-week-movie-link {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
