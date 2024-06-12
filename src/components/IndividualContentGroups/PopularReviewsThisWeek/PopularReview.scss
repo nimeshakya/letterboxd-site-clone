@@ -143,7 +143,6 @@
             width: 100%;
         }
         .review-container {
-            gap: 10px;
             h1 {
                 display: inline-flex;
                 align-items: center;
@@ -161,8 +160,9 @@
                 }
             }
             .reviewer-info-container {
-                flex-direction: column;
                 gap: 2px;
+                margin-top: 8px;
+                align-items: center;
             }
 
             .reviewer-review {
@@ -175,5 +175,25 @@
 @media screen and (max-width: 500px) {
     .popular-review {
         width: 100%;
+
+        .review-container {
+            .reviewer-info-container {
+                align-items: center;
+                .user-review-star {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .popular-review {
+        .review-container {
+            .reviewer-info-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     }
 }

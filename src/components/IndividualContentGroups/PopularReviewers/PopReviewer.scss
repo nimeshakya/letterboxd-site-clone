@@ -47,7 +47,11 @@
         align-items: center;
         row-gap: 100px;
         .reviewer-description-container {
+            h2 {
+                margin-bottom: 2px;
+            }
             .interaction-count-container {
+                gap: 5px;
                 flex-wrap: wrap;
             }
         }

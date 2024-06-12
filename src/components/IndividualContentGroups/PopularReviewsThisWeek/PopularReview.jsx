@@ -39,7 +39,7 @@ const PopularReview = ({ movie, reviewer }) => {
                             <p className='review-date'>{reviewer.dateTime}</p>
                         </div>
                     </div>
-                    <p>
+                    <p className='user-review-star'>
                         {
                             /* we have to call fuction here (must use an expression)*/
                             genRatingStar(reviewer.rating)
