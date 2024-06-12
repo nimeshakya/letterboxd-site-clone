@@ -23,12 +23,12 @@ const NarrowNavigation = ({ navLinks }) => {
                     className='search-form'
                     onSubmit={(e) => preventDefault()}
                 >
-                    <FaMagnifyingGlass className='content-search-icon' />
                     <input
                         type='search'
                         name='movie-search-input'
                         id='movie-search-input'
                     />
+                    <FaMagnifyingGlass className='content-search-icon' />
                 </form>
             </div>
             <Link
