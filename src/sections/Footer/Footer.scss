@@ -79,7 +79,7 @@ footer {
         width: 100%;
         text-align: center;
         background-color: variables.$color-dark-blue;
-        padding: 23px 0;
+        padding: 23px 20px;
         font-size: 16px;
         font-weight: 400;
         font-family: variables.$font-primary;
@@ -121,7 +121,7 @@ footer {
         .contact-form-container {
             form {
                 flex-direction: column;
-                gap: 5px;
+                gap: 10px;
                 background: none;
 
                 .contact-email-input {
