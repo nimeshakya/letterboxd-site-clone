@@ -68,13 +68,13 @@
 
                         &:nth-child(1) {
                             font-weight: 600;
-                            font-size: 16px;
+                            font-size: 18px;
                             color: variables.$color-white-80;
                         }
 
                         &:nth-child(2) {
                             font-weight: 400;
-                            font-size: 14px;
+                            font-size: 16px;
                             color: variables.$color-gray-80;
                         }
                     }
@@ -82,7 +82,7 @@
             }
 
             p {
-                font-size: 24px;
+                font-size: 20px;
                 color: variables.$color-secondary-s1;
             }
         }
@@ -91,7 +91,7 @@
             margin: 16px 0;
             color: variables.$color-gray-100;
             font-family: variables.$font-primary;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 400;
 
             .review-read-link {
@@ -104,7 +104,7 @@
             display: inline-flex;
             align-items: center;
             gap: 16px;
-            font-size: 14px;
+            font-size: 16px;
 
             .interaction-link {
                 display: inline-flex;

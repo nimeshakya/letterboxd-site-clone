@@ -38,7 +38,7 @@
                         color: variables.$color-pure-white;
                         padding: 8px;
                         border-radius: 4px;
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: 500;
                         text-transform: capitalize;
                     }
@@ -54,13 +54,14 @@
 
         .news-desc {
             h1 {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 600;
                 color: variables.$color-white-80;
+                margin-bottom: 5px;
             }
 
             p {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 400;
                 color: variables.$color-gray-100;
 
@@ -99,7 +100,7 @@
                 li {
                     .news-media-link {
                         color: variables.$color-secondary-s3;
-                        font-size: 24px;
+                        font-size: 20px;
                     }
                 }
             }
