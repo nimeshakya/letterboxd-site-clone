@@ -15,12 +15,13 @@
     );
     box-shadow: 0px 4px 4px 0px rgba(7, 12, 31, 0.1);
     gap: 24px;
+    position: relative;
 
     .rating-desc-container {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 0 calc(100% - 248px);
+        padding: 0 calc(100% - 248px) 40px calc(100% - 248px);
 
         h1 {
             color: variables.$color-pure-white;
@@ -66,6 +67,9 @@
     }
 
     .rating-stars-container {
+        position: absolute;
+        bottom: 12px;
+
         display: flex;
         align-items: flex-start;
         gap: 4px;
@@ -82,7 +86,7 @@
     .user-rating-card {
         width: calc((100% - 60px) / 3);
         .rating-desc-container {
-            padding: 0;
+            padding: 0 0 40px 0;
         }
     }
 }
@@ -90,18 +94,12 @@
 @media screen and (max-width: 954px) {
     .user-rating-card {
         width: calc((100% - 30px) / 2);
-        .rating-desc-container {
-            padding: 0;
-        }
     }
 }
 
 @media screen and (max-width: 644px) {
     .user-rating-card {
         width: 60%;
-        .rating-desc-container {
-            padding: 0;
-        }
     }
 }
 

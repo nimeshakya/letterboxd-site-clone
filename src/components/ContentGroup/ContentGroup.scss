@@ -42,26 +42,26 @@
     }
 }
 
-// @media screen and (max-width: 650px) {
-//     .content-group {
-//         margin: 50px auto auto auto;
+@media screen and (max-width: 650px) {
+    .content-group {
+        margin: 50px auto auto auto;
 
-//         .content-group-header {
-//             .content-group-heading-container {
-//                 h2 {
-//                     font-size: 16px;
-//                 }
+        .content-group-header {
+            .content-group-heading-container {
+                h2 {
+                    font-size: 18px;
+                }
 
-//                 .more-content-link {
-//                     font-size: 14px;
-//                 }
+                .more-content-link {
+                    font-size: 16px;
+                }
 
-//                 .content-group-description-container {
-//                     p {
-//                         font-size: 14px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                .content-group-description-container {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

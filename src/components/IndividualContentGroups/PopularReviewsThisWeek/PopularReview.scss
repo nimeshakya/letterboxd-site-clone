@@ -95,7 +95,7 @@
             font-weight: 400;
 
             .review-read-link {
-                color: variables.$color-primary-5;
+                color: variables.$color-secondary-s3;
                 font-weight: 600;
             }
         }
@@ -147,9 +147,8 @@
                 display: inline-flex;
                 align-items: center;
                 gap: 10px;
-
                 span {
-                    font-size: 18px;
+                    font-size: 20px;
 
                     &:nth-child(2) {
                         display: inline-flex;
@@ -163,10 +162,24 @@
                 gap: 2px;
                 margin-top: 8px;
                 align-items: center;
+
+                .reviewer-profile {
+                    div {
+                        p {
+                            &.reviewer-name {
+                                font-size: 16px;
+                            }
+                            &.review-date {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
 
             .reviewer-review {
                 margin: 0 0 10px 0;
+                font-size: 14px;
             }
         }
     }
