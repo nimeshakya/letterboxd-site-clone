@@ -30,17 +30,19 @@
                 color: variables.$color-pure-white;
                 font-family: variables.$font-primary;
                 font-size: 24px;
-                font-style: normal;
                 line-height: normal;
 
                 &:nth-child(1) {
                     font-weight: 600;
                 }
                 &:nth-child(2) {
-                    font-weight: 400;
                     display: inline-flex;
                     align-items: center;
                     gap: 16px;
+                    span {
+                        color: variables.$color-white-80;
+                        font-weight: 400;
+                    }
                 }
             }
         }
